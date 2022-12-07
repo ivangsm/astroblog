@@ -1,6 +1,6 @@
 {
-  "name": "@onwidget/astrowind",
-  "description": "A template to make your website using Astro + Tailwind CSS.",
+  "name": "astroblog",
+  "description": "Personal blog using Atro + Tailwindcss",
   "version": "0.8.4",
   "private": true,
   "scripts": {
@@ -42,6 +42,6 @@
     "typescript": "^4.9.3"
   },
   "engines": {
-    "node": "^14.15.0 || >=16.0.0"
+    "node": ">=16.0.0"
   }
 }

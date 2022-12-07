@@ -4,7 +4,7 @@ import Logo from '~/components/atoms/Logo.astro';
 import ToggleTheme from '~/components/core/ToggleTheme.astro';
 import ToggleMenu from '~/components/core/ToggleMenu.astro';
 
-import { getHomePermalink, getBlogPermalink, getPermalink, getRelativeLink } from '~/utils/permalinks';
+import { getHomePermalink, getBlogPermalink, getRelativeLink } from '~/utils/permalinks';
 ---
 
 <header
@@ -26,37 +26,6 @@ import { getHomePermalink, getBlogPermalink, getPermalink, getRelativeLink } fro
 			aria-label="Main navigation"
 		>
 			<ul class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto text-xl md:text-base">
-				<li class="dropdown">
-					<button
-						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-						>Pages</button
-					>
-					<ul
-						class="dropdown-menu rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white md:min-w-[200px] dark:md:bg-slate-800 drop-shadow-xl"
-					>
-						<li class="">
-							<a
-								class="rounded-t md:hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-4 block whitespace-no-wrap"
-								href="#">Features</a>
-						</li>
-						<li class="">
-							<a class="md:hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-4 block whitespace-no-wrap" href="#"
-								>Profile</a>
-						</li>
-						<li class="">
-							<a
-								class="rounded-b md:hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-4 block whitespace-no-wrap"
-								href="#">Pricing</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a
-						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-						href={getPermalink('useful-resources-to-create-websites', 'post')}
-						>Resources
-					</a>
-				</li>
 				<li>
 					<a
 						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
@@ -75,19 +44,20 @@ import { getHomePermalink, getBlogPermalink, getPermalink, getRelativeLink } fro
 				<div class="hidden items-center md:flex">
 					<ToggleTheme iconClass="w-5 h-5" />
 					<a
-						class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-						aria-label="RSS Feed"
-						href={getRelativeLink('/rss.xml')}
-					>
-						<Icon name="tabler:rss" class="w-5 h-5" />
-					</a>
-					<a
 						href="https://github.com/onwidget/astrowind"
 						class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
 						aria-label="Astrowind Github"
 					>
 						<Icon name="tabler:brand-github" class="w-5 h-5" />
 					</a>
+					<a
+						class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+						aria-label="RSS Feed"
+						href={getRelativeLink('/rss.xml')}
+					>
+						<Icon name="tabler:rss" class="w-5 h-5" />
+					</a>
+					
 				</div>
 			</div>
 		</nav>
