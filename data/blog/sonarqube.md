@@ -7,8 +7,6 @@ category: 'Tutorials'
 tags: ['SonarQube', 'Code analysis', 'Code quality']
 ---
 
-# Improve as a developer with SonarQube
-
 #### 🤔 What is web SonarQube?
 
 SonarQube is an open-source platform for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities on 15 programming languages in the open-source version. 

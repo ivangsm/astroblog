@@ -7,8 +7,6 @@ category: 'Tutorials'
 tags: ['U2F', 'Fido', 'Key', 'Yubico']
 ---
 
-# Using U2F keys as authentication methods
-
 #### 🤔 What is a FIDO U2F Key?
 
 Universal 2nd Factor (U2F) is an open standard that strengthens and simplifies two-factor authentication (2FA) using specialized Universal Serial Bus (USB) or near-field communication (NFC) devices.

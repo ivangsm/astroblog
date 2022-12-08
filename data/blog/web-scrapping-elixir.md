@@ -7,8 +7,6 @@ category: 'Tutorials'
 tags: [elixir, web scrapping]
 ---
 
-# Web Scrapping with Elixir
-
 #### ❓ What is web scrapping?
 
 
