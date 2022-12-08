@@ -32,7 +32,7 @@ const whenExternalScripts = (items = []) => {
 export default defineConfig({
 	sitemap: true,
 	site: 'https://ivansalazar.dev',
-	outDir: 'public',
+	outDir: 'dist',
 	publicDir: 'static',
 	trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 	output: 'static',

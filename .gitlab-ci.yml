@@ -1,5 +1,5 @@
 # The Docker image that will be used to build your app
-image: node:lts
+image: node:lts-alpine
 
 pages:
   cache:
@@ -7,14 +7,15 @@ pages:
       - node_modules/
   script:
     # Specify the steps involved to build your app here
-    - npm install
-    - npm run build
+    - yarn global add pnpm
+    - pnpm install
+    - pnpm build
 
   artifacts:
     paths:
       # The folder that contains the built files to be published.
       # This must be called "public".
-      - public
+      - dist
 
   only:
     # Trigger a new build and deploy only when there is a push to the
