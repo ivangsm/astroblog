@@ -14,8 +14,20 @@ import { SITE } from './src/config.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const whenExternalScripts = (items = []) =>
-	SITE.googleAnalyticsId ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
+const hasGoogleAnalyticsId = !!SITE.googleAnalyticsId;
+
+const whenExternalScripts = (items = []) => {
+  if (!Array.isArray(items)) {
+    items = [items];
+  }
+
+  if (hasGoogleAnalyticsId) {
+    return items.map((item) => item());
+  }
+
+  return [];
+}
+
 
 export default defineConfig({
 	site: SITE.origin,

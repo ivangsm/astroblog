@@ -1,63 +1,30 @@
 ---
-import { Icon } from 'astro-icon';
-import { Picture } from '@astrojs/image/components'
+
 ---
 
 <section>
-	<div class="max-w-6xl mx-auto px-4 sm:px-6">
-		<div class="py-12 md:py-20">
-			<div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
-				<h1 class="text-5xl md:text-[3.50rem] font-bold leading-tighter tracking-tighter mb-4 font-heading">
-					Your website with
-					<span>Astro</span> +
-					<span
-						class="sm:whitespace-nowrap"
-						>Tailwind CSS</span
-					>
-				</h1>
-				<div class="max-w-3xl mx-auto">
-					<p class="text-xl text-gray-600 mb-8 dark:text-slate-400">
-						<span class="font-semibold underline decoration-wavy decoration-1 decoration-primary-600 underline-offset-2">AstroWind</span> is a production ready template to start your new website using <em>Astro</em> + <em>Tailwind CSS</em>. It has been
-						designed following Best Practices, SEO, Accessibility, <span class="inline sm:hidden">...</span><span
-							class="hidden sm:inline"
-							>Dark Mode, Great Page Speed, image optimization, sitemap generation and more.</span
-						>
+	<div class="bg-cover bg-center mx-auto w-fullfont-sans antialiased text-gray-900 leading-normal tracking-wider" style="background-image:url('https://res.cloudinary.com/ivansalazar/image/upload/v1670474993/Iv%C3%A1n%20Salazar/clouds.webp');">
+		<div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+    
+			<figure class=" bg-white lg:rounded-xl p-8 dark:bg-slate-900 lg:dark:bg-opacity-90 lg:bg-opacity-70 bg-opacity-100 rounded-none dark:bg-opacity-100">
+				<img class="w-64 h-64 rounded-full mx-auto" src="https://res.cloudinary.com/ivansalazar/image/upload/v1670474975/Iv%C3%A1n%20Salazar/ivan.webp" alt="" width="384" height="512">
+				<div class="pt-12 pl-24 pr-24 text-center space-y-4">
+				  <blockquote>
+					<p class="text-2xl font-medium dark:text-white text-slate-700">
+						I devote my time to mastering the art of coding and use my skills to create fantastic projects fueled by my ❤️ and a steaming cup of coffee ☕️
 					</p>
-					<div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
-						<div class="flex w-full sm:w-auto">
-							<a
-								class="btn btn-primary sm:mb-0 w-full"
-								href="https://github.com/onwidget/astrowind"
-								target="_blank"
-								rel="noopener"
-							>
-								<Icon name="tabler:download" class="w-5 h-5 mr-1 -ml-1.5" /> Get template
-							</a>
-						</div>
-						<div class="flex w-full sm:w-auto">
-							<a
-								class="btn w-full"
-								href="#features">Learn more</a
-							>
-						</div>
+				  </blockquote>
+				  <figcaption class="font-semibold text-xl pt-12">
+					<div class="text-sky-500 dark:text-sky-400 font-bold text-2xl">
+					  Iván Salazar
 					</div>
+					<div class="text-slate-600 dark:text-slate-400 font-base text-md">
+					  Developer, México
+					</div>
+				  </figcaption>
 				</div>
-			</div>
-			<div>
-				<div class="relative m-auto max-w-4xl">
-					<Picture
-						src={import('~/assets/images/hero.jpg')}
-						class="mx-auto rounded-md w-full"
-						widths={[400, 768, 1480]}
-						sizes="(max-width: 767px) 400px, (max-width: 1479px) 768px, 1480px"
-						alt="Hero Image"
-						aspectRatio={1480/833}
-						loading="eager"
-						width={1480}
-						height={833}
-					/>
-				</div>
-			</div>
+			  </figure>
+		
 		</div>
 	</div>
 </section>

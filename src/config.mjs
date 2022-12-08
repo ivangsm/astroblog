@@ -1,20 +1,20 @@
 export const SITE = {
-	name: 'AstroWind',
+	name: 'Iván Salazar',
 
-	origin: 'https://astrowind.vercel.app',
+	origin: 'https://ivansalazar.dev',
 	basePathname: '/',
 	trailingSlash: false,
 
-	title: 'AstroWind — Your website with Astro + Tailwind CSS',
-	description: '🚀 AstroWind is a free and ready to start template to make your website using Astro and Tailwind CSS.',
+	title: 'Iván Salazar 🌮',
+	description: 'Personal website and tech blog',
 
-	googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-	googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
+	googleAnalyticsId: 'G-XSS732N7MG', // or "G-XXXXXXXXXX",
+	googleSiteVerificationId: '',
 };
 
 export const BLOG = {
 	disabled: false,
-	postsPerPage: 4,
+	postsPerPage: 5,
 
 	blog: {
 		disabled: false,
