@@ -14,9 +14,9 @@ tags: [elixir, web scrapping]
 
 The web scrapping allow us to convert an HTML document or structure into usable data in our programs.
 
-In this small project we will obtain information of the daily currency exchange rates from a table updated by the bank of Europe. [Link](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)
+In this small project, we will obtain information about the daily currency exchange rates from a table updated by the bank of Europe. [Link](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)
 
-This table contains the information of symbols, currency names and the exchange rate based on Euro.
+This table contains the information about symbols, currency names and the exchange rate based on Euro.
 
 We will use 2 libraries for our elixir program
 
@@ -29,7 +29,7 @@ We need to create an Elixir project with Mix, in this case I use "**Curry**" as 
 mix new curry && cd curry
 ```
 
-In the folder we need to add the dependencies on the file named **mix.exs**
+In the folder, we need to add the dependencies on the file named **mix.exs**
 
 ```elixir
 defp deps do
@@ -40,13 +40,13 @@ defp deps do
  end
 ```
 
-If you use **VS Code** as editor together with the **ElixirLS** extension these dependencies should be installed automatically after saving the file, otherwise you need to run the following command in the terminal inside the project directory to get the dependencies.
+If you use **VS Code** as editor together with the **Elixir LS** extension, these dependencies should be installed automatically after saving the file. Otherwise, you have to run the following command in the terminal inside the project directory to get the dependencies.
 
 ```bash
 mix deps.get
 ```
 
-In the curry.ex file (depending of the name of your project) inside the lib directory we need to create a function inside the Curry module (or the name you choose)
+In the curry.ex file (depending on the name of your project) inside the lib directory, we must create a function inside the Curry module (or the name you choose)
 
 ```elixir
 @url "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
@@ -76,7 +76,7 @@ def get_currencies do
 
 #### 🔗 Declaring the URL
 
-Assign the **URL** from which we need to obtain information to the ***url*** constant
+Assign the **URL** from which we need to obtain information to the ***URL*** constant
 
 ```elixir
 @url "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
@@ -94,7 +94,7 @@ end
 
 #### 🌚 Declare the needed pattern as an option
 
-This function **_HTTPoison.get(url)_** return a tuple with an atom and a map, in this case we only need the body, and we are able to get only this from the entire response using pattern matching
+This function **_HTTPoison.get(url)_** return a tuple with an atom and a map, in this case we only need the body, and we can get only this from the entire response using pattern matching
 
 These options allow us to save all the body from the response in a body variable only if the request was successful
 
@@ -105,7 +105,7 @@ These options allow us to save all the body from the response in a body variable
 
 Now the HTML structure of the body is saved on the body variable, and now we need to parse this data with the ***parse_document*** function from the Floki module.
 
-Again, we need to use pattern matching to save our transformed data into the html var, that converts the html document into a series of list and tuples 
+Again, we need to use pattern matching to save our transformed data into the HTML var, that converts the HTML document into a series of list and tuples 
 
 ```elixir
 {:ok, html} = Floki.parse_document(response.body)
@@ -113,7 +113,7 @@ Again, we need to use pattern matching to save our transformed data into the htm
 
 #### 🔮 Now, the magic!
 
-With this data we can now start to filter and transform the data with another Floki functions.
+With this data, we can now start to filter and transform the data with another Floki functions.
 
 
 ```elixir
@@ -169,6 +169,6 @@ content =
  ]}
 ```
 
-Now with this you be able to use this data to interpolate the exchange rate based in any of these currencies and not only the Euro. Or get specific data, save to a db etc. But we make this in another post.
+Now with this, you be able to use this data to interpolate the exchange rate based in any of these currencies and not only the Euro. Or get specific data, save to a db etc. But we make this in another post.
 
-If you have any questions or suggestions I will be happy to read them, you can send me an email to [me@ivansalazar.dev](mailto:me@ivansalazar.dev)
+If you have any questions or suggestions I will be happy to read them, you can email me to [me@ivansalazar.dev](mailto:me@ivansalazar.dev)
