@@ -25,7 +25,7 @@ It depends on your operating system the installation process may ask to change, 
 Now, with our tools installed, we will proceed to write a file called docker-compose.yml inside a directory that will contain the SonarQube and the database data.
 
 
-```yml
+```yaml
 version: "3"
 
 services:
