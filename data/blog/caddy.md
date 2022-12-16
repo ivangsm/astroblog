@@ -1,5 +1,5 @@
 ---
-publishDate: 'Dec 15 2022'
+publishDate: 'Dec 16 2022'
 title: 'SetUp Caddy Web Server with Docker'
 description: 'SetUp Caddy Web Server with Docker'
 image: '~/assets/images/caddy.png'
