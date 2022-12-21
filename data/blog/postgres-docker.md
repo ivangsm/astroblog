@@ -37,7 +37,7 @@ In addition to the basic usage described above, you can also configure various a
 docker run --name my-postgres \
 -e POSTGRES_PASSWORD=mysecretpassword \
 -e POSTGRES_DB=mydb \
--v ${HOME}/.postgres-data/:/var/lib/postgresql/data \
+-v ${HOME}/.postgres-data/:/var/lib/postgresql/data:z \
 -e POSTGRES_ENCODING=UTF8 \
 -e POSTGRES_LC_COLLATE=en_US.UTF-8 \
 -e POSTGRES_LC_CTYPE=en_US.UTF-8 \
