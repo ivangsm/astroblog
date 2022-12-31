@@ -1,7 +1,31 @@
 ---
 import { Picture } from '@astrojs/image/components'
-
 ---
+
+<script>
+    import Typewriter from 'typewriter-effect/dist/core';
+
+	const langs = document.querySelector('#langs');
+
+	var typewriter = new Typewriter(langs, {
+	loop: true,
+	delay: 50,
+	});
+
+	typewriter
+	.typeString('<span style="color: #0ea5e9;">Go</span>')
+	.pauseFor(500)
+	.deleteChars(2)
+	.typeString('<span style="color: #ffdc51;">Python</span>')
+	.pauseFor(500)
+	.deleteChars(6)
+	.typeString('<span style="color: #42b883;">Vue</span>')
+	.pauseFor(500)
+	.deleteChars(3)
+	.typeString('<span style="color: #866795;">Elixir</span>')
+	.pauseFor(500)
+	.start();
+</script>
 
 <section>
 	<div class="bg-cover bg-center mx-auto w-fullfont-sans antialiased text-gray-900 leading-normal tracking-wider" style="background-image:url('https://res.cloudinary.com/ivansalazar/image/upload/v1670492881/Iv%C3%A1n%20Salazar/background.webp');">
@@ -19,18 +43,18 @@ import { Picture } from '@astrojs/image/components'
 						width={640}
 						height={640}
 					/>
-				<div class="pt-12 md:pl-24 md:pr-24 text-center space-y-4">
+				<div class="pt-12-sm:pl-24 md:pr-24 text-center space-y-4">
 				  <blockquote>
 					<p class="md:text-2xl text-xl font-medium dark:text-white text-slate-700">
 						I devote my time to mastering the art of coding and use my skills to create fantastic projects fueled by my ❤️ and a steaming cup of coffee ☕️
 					</p>
 				  </blockquote>
 				  <figcaption class="font-semibold text-xl pt-12">
-					<div class="text-sky-500 dark:text-sky-400 font-bold text-2xl">
+					<div class="text-sky-500 dark:text-sky-400 font-bold text-2xl text-shadow">
 					  Iván Salazar
 					</div>
-					<div class="text-slate-600 dark:text-slate-400 font-base text-md">
-					  Developer
+					<div class="text-slate-600 dark:text-slate-400 font-base text-md text-shadow-sm">
+					 <span id="langs"></span>Developer
 					</div>
 				  </figcaption>
 				</div>
