@@ -9,21 +9,21 @@ import { Picture } from '@astrojs/image/components'
 
 	var typewriter = new Typewriter(langs, {
 	loop: true,
-	delay: 50,
+	delay: 75,
 	});
 
 	typewriter
 	.typeString('<span style="color: #0ea5e9;">Go</span>')
-	.pauseFor(500)
+	.pauseFor(1000)
 	.deleteChars(2)
 	.typeString('<span style="color: #ffdc51;">Python</span>')
-	.pauseFor(500)
+	.pauseFor(750)
 	.deleteChars(6)
 	.typeString('<span style="color: #42b883;">Vue</span>')
-	.pauseFor(500)
+	.pauseFor(1000)
 	.deleteChars(3)
 	.typeString('<span style="color: #866795;">Elixir</span>')
-	.pauseFor(500)
+	.pauseFor(750)
 	.start();
 </script>
 
@@ -50,7 +50,7 @@ import { Picture } from '@astrojs/image/components'
 					</p>
 				  </blockquote>
 				  <figcaption class="font-semibold text-xl pt-12">
-					<div class="text-sky-500 dark:text-sky-400 font-bold text-2xl text-shadow">
+					<div class="text-sky-750 dark:text-sky-400 font-bold text-2xl text-shadow">
 					  Iván Salazar
 					</div>
 					<div class="text-slate-600 dark:text-slate-400 font-base text-md text-shadow-sm">
