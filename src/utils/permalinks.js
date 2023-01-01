@@ -1,24 +1,17 @@
-import slugify from 'limax';
+import slugify from 'slugify';
 
 import { SITE, BLOG } from '~/config.mjs';
 
-const trim = (str, ch) => {
-	let start = 0,
-		end = str.length || 0;
-	while (start < end && str[start] === ch) ++start;
-	while (end > start && str[end - 1] === ch) --end;
-	return start > 0 || end < str.length ? str.substring(start, end) : str;
-};
+const slashRgx = /\//g;
 
-const trimSlash = (s) => trim(trim(s, '/'));
+const basePathname = SITE.basePathname.replace(slashRgx, '');
+
 const createPath = (...params) => {
-	const paths = params.filter((el) => !!el).join('/');
-	return '/' + paths + (SITE.trailingSlash && paths ? '/' : '');
+	const paths = params.filter(Boolean).join('/');
+	return `/${paths}${SITE.trailingSlash && paths ? '/' : ''}`;
 };
 
-const basePathname = trimSlash(SITE.basePathname);
-
-export const cleanSlug = (text) => slugify(trimSlash(text));
+export const cleanSlug = (text) => slugify(text.replace(slashRgx, ''), {lower: true});
 
 export const BLOG_BASE = cleanSlug(BLOG?.blog?.pathname);
 export const POST_BASE = cleanSlug(BLOG?.post?.pathname);
@@ -56,8 +49,9 @@ export const getHomePermalink = () => {
 
 /** */
 export const getRelativeLink = (link = "") => {
-	return createPath(basePathname, trimSlash(link));
-}
+	return createPath(basePathname, link.replace(slashRgx, ''));
+};
+
 
 /** */
 export const getBlogPermalink = () => getPermalink(BLOG_BASE);
