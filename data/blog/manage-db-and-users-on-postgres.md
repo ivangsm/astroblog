@@ -17,7 +17,7 @@ Now, let's get started!
 To create a user in PostgreSQL, you can use the **CREATE USER** command. For example:
 
 ```sql
-CREATE USER myuser WITH PASSWORD 'mypassword';
+CREATE USER myuser WITH ENCRYPTED PASSWORD 'mypassword';
 ```
 
 This will create a user with the username myuser and the password mypassword.
