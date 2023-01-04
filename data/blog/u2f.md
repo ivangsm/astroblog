@@ -1,7 +1,6 @@
 ---
 publishDate: 'Sep 24 2021'
 title: 'Auth with U2F Keys in Linux'
-description: 'Authentication & authorization with U2F keys in Linux'
 image: '~/assets/images/u2f.png'
 category: 'Tutorials'
 tags: ['U2F', 'Fido', 'Key', 'Yubico']

@@ -1,7 +1,6 @@
 ---
 publishDate: 'May 14 2021'
 title: 'Web Scrapping with Elixir'
-description: 'Elixir is a functional programming language that can be used to extract data from an HTML document or web page through web scrapping. This tutorial will guide you through the process of using the HTTPoison and Floki libraries to make an HTTP request and parse the HTML data, respectively, in order to obtain and return specific information from the web page.'
 image: '~/assets/images/elixir2.png'
 category: 'Tutorials'
 tags: [elixir, web scrapping]

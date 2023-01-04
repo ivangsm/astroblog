@@ -1,7 +1,6 @@
 ---
 publishDate: 'Jul 17 2021'
 title: 'Improve as a developer with SonarQube'
-description: 'Code analysis with SonarQube to improve your code quality'
 image: '~/assets/images/sq.webp'
 category: 'Tutorials'
 tags: ['SonarQube', 'Code analysis', 'Code quality']

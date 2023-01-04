@@ -1,7 +1,6 @@
 ---
 publishDate: 'Dec 15 2022'
 title: 'SetUp PostgreSQL with Docker'
-description: 'SetUp PostgreSQL with Docker'
 image: '~/assets/images/dk-pg.webp'
 category: 'Tutorials'
 tags: ['postgres', 'sql', 'docker', 'podman', 'docker-compose']

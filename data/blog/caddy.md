@@ -1,7 +1,6 @@
 ---
 publishDate: 'Dec 16 2022'
 title: 'SetUp Caddy Web Server with Docker'
-description: 'SetUp Caddy Web Server with Docker'
 image: '~/assets/images/caddy.png'
 category: 'Tutorials'
 tags: ['caddy', 'web', 'server', 'docker', 'docker-compose']
