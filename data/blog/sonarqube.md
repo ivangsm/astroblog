@@ -3,7 +3,7 @@ publishDate: 'Jul 17 2021'
 title: 'Improve as a developer with SonarQube'
 image: '~/assets/images/sq.webp'
 category: 'Tutorials'
-tags: ['SonarQube', 'Code analysis', 'Code quality']
+tags: ['SonarQube', 'Code analysis', 'Code quality', 'docker', 'docker-compose']
 ---
 
 #### 🤔 What is web SonarQube?
