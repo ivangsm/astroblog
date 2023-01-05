@@ -1,5 +1,4 @@
 import slugify from 'slugify';
-
 import { SITE, BLOG } from '~/config.mjs';
 
 const trimSlash = (str) => str.trim().replace(/^(\/+|\/+$)/g, '');
@@ -18,9 +17,7 @@ export const POST_BASE = cleanSlug(BLOG?.post?.pathname);
 export const CATEGORY_BASE = cleanSlug(BLOG?.category?.pathname);
 export const TAG_BASE = cleanSlug(BLOG?.tag?.pathname);
 
-
 export const getCanonical = (path = '') => new URL(path, SITE.origin);
-
 
 export const getPermalink = (slug = '', type = 'page') => {
 	const _slug = cleanSlug(slug);
@@ -41,17 +38,13 @@ export const getPermalink = (slug = '', type = 'page') => {
 	}
 };
 
-
 export const getHomePermalink = () => {
 	const permalink = getPermalink();
 	return permalink !== '/' ? permalink + '/' : permalink;
 };
 
-
 export const getRelativeLink = (link = "") => {
 	return createPath(basePathname, trimSlash(link));
 };
 
-
-/** */
 export const getBlogPermalink = () => getPermalink(BLOG_BASE);
