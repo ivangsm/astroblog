@@ -112,7 +112,7 @@ print(tables)  # [[0, 0, 0, 0], [0, 1, 2, 3], [0, 2, 4, 6], [0, 3, 6, 9]]
 
 ### 🔢 Set Comprehensions
 
-Set comprehensions are similar to list comprehensions, but they create a new set rather than a list. Here is an example of creating a new set of the squares of the numbers 0 through 9 using a traditional for loop and the add() method:
+Set comprehensions are similar to list comprehensions, but they create a new set rather than a list.
 
 ```python
 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -131,17 +131,10 @@ squares = {number ** 2 for number in numbers}
 
 print(squares)  # {0, 1, 4, 9, 16, 25, 36, 49, 64, 81}
 ```
-Set comprehensions can also include a predicate to filter the elements of the set. Here is an example of creating a new set of the even squares of the numbers 0 through 9 using a set comprehension with a predicate:
 
-```python
-numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-even_squares = {number ** 2 for number in numbers if number % 2 == 0}
-
-print(even_squares)  # {0, 4, 16, 36, 64}
-```
 ### 📖 Dictionary Comprehensions
 
-Dictionary comprehensions are similar to list and set comprehensions, but they create a new dictionary rather than a list or set. Here is an example of creating a new dictionary that maps numbers to their squares using a traditional for loop and the update() method:
+Dictionary comprehensions are similar to list and set comprehensions, but they create a new dictionary rather than a list or set.
 
 ```python
 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -159,15 +152,6 @@ numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 squares = {number: number ** 2 for number in numbers}
 
 print(squares)  # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
-```
-
-Dictionary comprehensions can also include a predicate to filter the keys and values of the dictionary. Here is an example of creating a new dictionary that maps even numbers to their squares using a dictionary comprehension with a predicate:
-
-```python
-numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-even_squares = {number: number ** 2 for number in numbers if number % 2 == 0}
-
-print(even_squares)  # {0: 0, 2: 4, 4: 16, 6: 36, 8: 64}
 ```
 
 ### 🔍 Comparison to Traditional Loops and Functions
