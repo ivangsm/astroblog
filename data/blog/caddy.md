@@ -148,7 +148,7 @@ services:
 
 networks:
   caddy_network:
-    driver: bridge
+    driver: host
 ```
 
 This **docker-compose.yml** file defines a caddy service that uses the caddy Docker image and exposes port 80 and 443. It also mounts the Caddyfile and **www** directory from the host machine as volumes in the container, and connects the container to a **caddy_network** network.
