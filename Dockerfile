@@ -1,16 +1,19 @@
+# Stage 1: Base
+FROM node:lts-alpine AS base
+RUN yarn global add pnpm
+
 # Stage 1: Dependencies
-FROM node:lts-alpine AS deps
+FROM base AS deps
 WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
-RUN yarn global add pnpm && \
-    pnpm i --frozen-lockfile --prefer-frozen-lockfile
+RUN pnpm i --frozen-lockfile --prod
 
 # Stage 2: Build
-FROM node:lts-alpine AS builder
+FROM base AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN yarn build
+RUN pnpm run build
 
 # Stage 3: Production
 FROM nginx:alpine AS production

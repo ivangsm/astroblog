@@ -1,0 +1,32 @@
+# Ignore Node.js modules
+node_modules
+
+# Ignore logs
+logs
+*.log
+
+# Ignore build artifacts
+dist
+build
+
+# Ignore environment-specific files
+.env
+.env.*
+.env.local
+
+# Ignore version control files
+.git
+.gitignore
+
+# Ignore Docker-specific files
+.dockerignore
+.docker
+
+# Ignore development tools configuration
+.editorconfig
+.eslint*
+.prettier*
+
+# Ignore tests and test coverage reports
+coverage
+test
