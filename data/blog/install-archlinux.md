@@ -17,7 +17,7 @@ Insert the Arch Linux USB drive into your computer and reboot. Ensure that your 
 
 #### ⚙️ Configure the Keyboard
 
-To ensure the correct keyboard layout, use the following command:
+If you're using a Latin-American layout keyboard and want to ensure the correct keyboard layout, use the following command, as the default keyboard layout is US.
 
 ```bash
 loadkeys la-latin1
