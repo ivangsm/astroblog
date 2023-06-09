@@ -12,26 +12,26 @@ SCP (secure copy) is a command-line utility that allows you to securely transfer
 ### ⬆️ Uploading Files and Folders
 To upload a file or folder to a remote server using SCP, use the following syntax:
 
-```
+```bash
 scp [local file or folder] [username]@[remote server]:[remote destination]
 ```
 
 For example, to upload a file called "myfile.txt" from your local machine to the remote server "example.com" in the folder "myfolder", you would use the following command:
 
-```
+```bash
 scp myfile.txt user@example.com:/myfolder
 ```
 
 ### ⬇️ Downloading Files and Folders
 To download a file or folder from a remote server using SCP, use the following syntax:
 
-```
+```bash
 scp [username]@[remote server]:[remote file or folder] [local destination]
 ```
 
 For example, to download a file called "myfile.txt" from the remote server "example.com" in the folder "myfolder" to your local machine, you would use the following command:
 
-```
+```bash
 scp user@example.com:/myfolder/myfile.txt .
 ```
 
@@ -39,13 +39,13 @@ scp user@example.com:/myfolder/myfile.txt .
 
 -r option allows you to copy recursively the folders
 
-```
+```bash
 scp -r [local folder] [username]@[remote server]:[remote destination]
 ```
 
 -P option allows you to specify a port different than the default (22)
 
-```
+```bash
 scp -P [port] [local file or folder] [username]@[remote server]:[remote destination]
 ```
 

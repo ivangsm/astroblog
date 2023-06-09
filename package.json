@@ -41,7 +41,7 @@
     "astro-icon": "^0.8.1",
     "mdast-util-to-string": "^3.2.0",
     "reading-time": "^1.5.0",
-    "rollup": "^3.23.1",
+    "rollup": "^3.24.0",
     "sharp": "^0.32.1",
     "slugify": "^1.6.6",
     "subfont": "^6.12.5",

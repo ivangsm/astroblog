@@ -3,6 +3,7 @@ import '~/assets/styles/base.css';
 
 import MetaTags from '~/components/core/MetaTags.astro';
 import BasicScripts from '~/components/core/BasicScripts.astro';
+import CopyCode from '~/components/core/CopyCode.astro';
 
 const { meta = {} } = Astro.props;
 ---
@@ -17,6 +18,7 @@ const { meta = {} } = Astro.props;
 	<body class="antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-slate-900 dark:transition-colors dark:duration-700">
 		<slot />
 		<BasicScripts />
+		<CopyCode />
 		<style is:global>
 			img {
 				content-visibility: auto;
