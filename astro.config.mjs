@@ -1,69 +1,68 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
+import path from 'path'
+import { fileURLToPath } from 'url'
 
-import { defineConfig } from 'astro/config';
+import { defineConfig } from 'astro/config'
 
-import tailwind from '@astrojs/tailwind';
-import sitemap from '@astrojs/sitemap';
-import image from '@astrojs/image';
-import mdx from '@astrojs/mdx';
-import partytown from '@astrojs/partytown';
+import tailwind from '@astrojs/tailwind'
+import sitemap from '@astrojs/sitemap'
+import image from '@astrojs/image'
+import mdx from '@astrojs/mdx'
+import partytown from '@astrojs/partytown'
 
-import { remarkReadingTime } from './src/utils/frontmatter.mjs';
-import { SITE } from './src/config.mjs';
+import { remarkReadingTime } from './src/utils/frontmatter.mjs'
+import { SITE } from './src/config.mjs'
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-const hasGoogleAnalyticsId = !!SITE.googleAnalyticsId;
+const hasGoogleAnalyticsId = !!SITE.googleAnalyticsId
 
 const whenExternalScripts = (items = []) => {
   if (!Array.isArray(items)) {
-    items = [items];
+    items = [items]
   }
 
   if (hasGoogleAnalyticsId) {
-    return items.map((item) => item());
+    return items.map((item) => item())
   }
 
-  return [];
+  return []
 }
 
-
 export default defineConfig({
-	site: SITE.origin,
-	base: SITE.basePathname,
-	trailingSlash: SITE.trailingSlash ? 'always' : 'never',
-	output: 'static',
+  site: SITE.origin,
+  base: SITE.basePathname,
+  trailingSlash: SITE.trailingSlash ? 'always' : 'never',
+  output: 'static',
 
-	integrations: [
-		tailwind({
-			config: {
-				applyBaseStyles: false,
-			},
-		}),
-		sitemap(),
-		image({
-			serviceEntryPoint: '@astrojs/image/sharp',
-		}),
-		mdx(),
+  integrations: [
+    tailwind({
+      config: {
+        applyBaseStyles: false,
+      },
+    }),
+    sitemap(),
+    image({
+      serviceEntryPoint: '@astrojs/image/sharp',
+    }),
+    mdx(),
 
-		...whenExternalScripts(() =>
-			partytown({
-				config: { forward: ['dataLayer.push'] },
-			})
-		),
-	],
+    ...whenExternalScripts(() =>
+      partytown({
+        config: { forward: ['dataLayer.push'] },
+      }),
+    ),
+  ],
 
-	markdown: {
-		remarkPlugins: [remarkReadingTime],
-		extendDefaultPlugins: true,
-	},
+  markdown: {
+    remarkPlugins: [remarkReadingTime],
+    extendDefaultPlugins: true,
+  },
 
-	vite: {
-		resolve: {
-			alias: {
-				'~': path.resolve(__dirname, './src'),
-			},
-		},
-	},
-});
+  vite: {
+    resolve: {
+      alias: {
+        '~': path.resolve(__dirname, './src'),
+      },
+    },
+  },
+})

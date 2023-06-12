@@ -3,17 +3,15 @@ import Grid from '~/components/blog/Grid.astro';
 
 import { findPostsByIds } from '~/utils/posts';
 
-const ids = [
-	'web-scrapping-elixir',
-	'sonarqube',
-	'u2f',
-];
+const ids = ['web-scrapping-elixir', 'sonarqube', 'u2f'];
 const posts = await findPostsByIds(ids);
 ---
 
 <section class="px-4 py-16 mx-auto max-w-6xl lg:py-20">
 	<div class="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
-		<h2 class="max-w-lg mb-2 text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none lg:mb-5 group font-heading">
+		<h2
+			class="max-w-lg mb-2 text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none lg:mb-5 group font-heading"
+		>
 			<span class="inline-block mb-1 sm:mb-4">Recent Blog Posts</span>
 		</h2>
 	</div>
