@@ -4,6 +4,7 @@ title: 'Improve as a developer with SonarQube'
 image: '~/assets/images/sq.webp'
 category: 'Tutorials'
 tags: ['SonarQube', 'Code analysis', 'Code quality', 'docker', 'docker-compose']
+description: Learn how to improve as a developer by using SonarQube, an open-source platform for continuous inspection of code quality. SonarQube performs automatic code reviews and static analysis to detect bugs, code smells, and security vulnerabilities in various programming languages. This tutorial guides you through the process of running SonarQube with Docker and docker-compose, setting up a project, and analyzing your code for quality issues. By following this tutorial, you'll be able to leverage SonarQube to enhance the quality of your code and improve as a developer.
 ---
 
 #### 🤔 What is web SonarQube?

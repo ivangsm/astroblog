@@ -4,6 +4,7 @@ title: 'SetUp Caddy Web Server with Docker'
 image: '~/assets/images/caddy.png'
 category: 'Tutorials'
 tags: ['caddy', 'web', 'server', 'docker', 'docker-compose']
+description: Learn how to set up Caddy, a user-friendly web server written in Go, using Docker. This tutorial provides step-by-step instructions for installing Docker, pulling the Caddy Docker image, and creating a Docker container. Discover how to customize Caddy for your website by creating a Caddyfile and mounting directories as volumes. Explore advanced features such as virtual hosting, reverse proxy configuration, and enabling HTTP compression. Alternatively, learn how to use Docker Compose for managing and deploying your Caddy server. Improve your web server management and scalability with Caddy and Docker.
 ---
 
 Caddy is a web server written in Go that is designed to be easy to use and configure. It has a number of features that make it an attractive choice for those looking to host their own websites, including automatic HTTPS, virtual hosting, and a simple configuration syntax.

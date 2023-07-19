@@ -4,6 +4,7 @@ title: 'Auth with U2F Keys in Linux'
 image: '~/assets/images/u2f.png'
 category: 'Tutorials'
 tags: ['U2F', 'Fido', 'Key', 'Yubico']
+description: Learn how to configure and use FIDO U2F keys for authentication in Linux. FIDO U2F keys provide a secure and convenient two-factor authentication method that can be used in various applications and websites. This tutorial focuses on configuring U2F keys in Arch Linux, including installing the necessary packages, setting up the key file, and modifying the PAM configuration files to allow U2F key authentication. By following this tutorial, you'll be able to enhance the security of your Linux system using FIDO U2F keys.
 ---
 
 #### 🤔 What is a FIDO U2F Key?

@@ -4,6 +4,7 @@ title: 'SetUp PostgreSQL with Docker'
 image: '~/assets/images/dk-pg.webp'
 category: 'Tutorials'
 tags: ['postgres', 'sql', 'docker', 'podman', 'docker-compose']
+description: Learn how to set up PostgreSQL with Docker in this tutorial. PostgreSQL is a stable and feature-rich open-source relational database management system, while Docker is a platform for building and running distributed applications. The tutorial covers the process of pulling the PostgreSQL Docker image, starting a PostgreSQL container, and connecting to the PostgreSQL server within the container. Additionally, it explores configuring various aspects of the PostgreSQL server, such as setting the default encoding, locale, and time zone. You'll also discover how to make your data persistent using volumes. The tutorial concludes by highlighting the convenience of using PostgreSQL with Docker and how it simplifies server management and configuration. Get started with PostgreSQL and Docker for an efficient and streamlined database setup.
 ---
 
 #### 🐘 What's Postgres?

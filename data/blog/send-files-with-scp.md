@@ -4,6 +4,7 @@ title: 'Send files using SCP'
 image: '~/assets/images/scp.webp'
 category: 'Tutorials'
 tags: ['scp', 'web', 'server']
+description: Learn how to use SCP (secure copy) to securely transfer files and folders between your local machine and a remote server. SCP uses the SSH protocol to encrypt data and authenticate users, making it a secure alternative to other file transfer methods. This tutorial covers the syntax and usage of SCP for uploading and downloading files and folders. It also introduces SCP options such as recursive copying and specifying a different port. By following this tutorial, you'll be able to effectively use SCP for secure file transfers.
 ---
 
 SCP (secure copy) is a command-line utility that allows you to securely transfer files and folders between your local machine and a remote server, or vice versa. It uses the SSH protocol to encrypt the data and authenticate the user, making it a secure alternative to FTP and other file transfer methods.

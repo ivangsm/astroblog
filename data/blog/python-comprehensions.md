@@ -4,6 +4,7 @@ title: 'List, Set and Dictionary Python Comprehensions'
 image: '~/assets/images/python.webp'
 category: 'Tutorials'
 tags: ['python', 'development', 'list', 'set', 'dictionary', 'comprehensions']
+description: Learn how to use list, set, and dictionary comprehensions in Python to create new sequences from existing ones. Comprehensions are concise and efficient alternatives to traditional loops and functions like `for`, `map()`, and `filter()`. This tutorial covers the syntax and usage of list comprehensions, including conditionals and nested loops. It also explores set and dictionary comprehensions and compares them to their traditional counterparts. Comprehensions provide a Pythonic and efficient way to generate sequences, making your code more readable and efficient.
 ---
 
 List, set, and dictionary comprehensions are concise ways to create new sequences from existing sequences in Python. They are often faster and more memory-efficient than using traditional loops and functions like map(), filter(), and for to achieve the same result. In this article, we will explore how to use comprehensions in Python and compare them to their traditional counterparts.
