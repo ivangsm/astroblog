@@ -4,7 +4,6 @@ title: 'Manage DBs and Users on Postgres'
 image: '~/assets/images/pg.webp'
 category: 'Tutorials'
 tags: ['postgres', 'db', 'server', 'docker', 'management', 'pgtune']
-description: Learn how to manage databases and users in PostgreSQL with ease. This tutorial provides step-by-step instructions for creating users and databases, granting permissions, and setting up privileges in both production and development environments. Explore various methods, including psql commands and plain SQL, to create users and databases. Discover how to grant specific privileges to users for tables and databases, and gain insights into recommended privileges for production and development databases. Additionally, learn about PGTune, a utility that optimizes the configuration of a PostgreSQL server based on hardware and workload. If you have any questions or suggestions, feel free to reach out via email. Enhance your PostgreSQL management skills and efficiently handle databases and users.
 ---
 
 Welcome to our tutorial on managing databases and users in PostgreSQL! This post will guide you through the process of creating databases and users, as well as granting permissions for users to access databases. We will provide examples using both psql commands and plain SQL, and offer some recommendations for privileges in production and development environments.

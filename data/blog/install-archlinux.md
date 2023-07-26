@@ -4,7 +4,6 @@ title: 'Install Arch Linux the easy way'
 image: '~/assets/images/arch.png'
 category: 'Tutorials'
 tags: ['linux', 'archlinux', 'arch']
-description: Learn how to install Arch Linux effortlessly using the archinstall script in this comprehensive tutorial. Arch Linux, known for its lightweight and customizable nature, has become increasingly popular among Linux enthusiasts. This guide provides step-by-step instructions to help you create a bootable Arch Linux USB drive, boot into the Arch Linux environment, configure the keyboard layout, connect to Wi-Fi, and finally, run the archinstall script for a hassle-free installation experience. Discover the simplicity and flexibility of Arch Linux as you set up a fully functional system. Enjoy exploring and customizing your new Arch Linux installation with ease.
 ---
 
 ## 🐧 Installing Arch Linux the Easy Way 
